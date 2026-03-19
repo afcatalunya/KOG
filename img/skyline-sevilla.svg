@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280" preserveAspectRatio="xMidYMax slice" width="100%" height="280">
+  <defs>
+    <linearGradient id="skyGradSev" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#ece8e0"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1440" height="280" fill="url(#skyGradSev)"/>
+
+  <!-- === LAYER 1: Distant buildings (light grey #c0bbb0) === -->
+  <g fill="#c0bbb0">
+    <!-- Far background block buildings -->
+    <rect x="0" y="190" width="80" height="90"/>
+    <rect x="75" y="175" width="60" height="105"/>
+    <rect x="130" y="182" width="50" height="98"/>
+    <rect x="175" y="168" width="70" height="112"/>
+    <rect x="240" y="178" width="55" height="102"/>
+    <!-- Background tower (distant) -->
+    <rect x="290" y="145" width="18" height="135"/>
+    <rect x="303" y="138" width="10" height="8"/>
+    <rect x="305" y="130" width="6" height="10"/>
+    <rect x="306" y="120" width="4" height="12"/>
+    <!-- More background blocks -->
+    <rect x="310" y="172" width="65" height="108"/>
+    <rect x="370" y="185" width="45" height="95"/>
+    <rect x="410" y="165" width="80" height="115"/>
+    <rect x="485" y="178" width="55" height="102"/>
+    <rect x="535" y="170" width="70" height="110"/>
+    <rect x="600" y="182" width="50" height="98"/>
+    <rect x="645" y="160" width="75" height="120"/>
+    <rect x="715" y="175" width="55" height="105"/>
+    <rect x="765" y="168" width="65" height="112"/>
+    <rect x="825" y="180" width="50" height="100"/>
+    <rect x="870" y="162" width="80" height="118"/>
+    <rect x="945" y="177" width="55" height="103"/>
+    <rect x="995" y="169" width="70" height="111"/>
+    <rect x="1060" y="183" width="50" height="97"/>
+    <rect x="1105" y="164" width="75" height="116"/>
+    <rect x="1175" y="178" width="55" height="102"/>
+    <rect x="1225" y="171" width="65" height="109"/>
+    <rect x="1285" y="180" width="55" height="100"/>
+    <rect x="1335" y="165" width="70" height="115"/>
+    <rect x="1400" y="178" width="45" height="102"/>
+  </g>
+
+  <!-- === LAYER 2: Mid-ground iconic buildings (medium grey #888) === -->
+  <g fill="#888888">
+
+    <!-- LA GIRALDA (Seville Cathedral bell tower) — centrepiece, right of centre -->
+    <g transform="translate(820,0)">
+      <!-- Base tower body -->
+      <rect x="-22" y="95" width="44" height="145"/>
+      <!-- Decorative bands on tower -->
+      <rect x="-22" y="105" width="44" height="4" fill="#aaaaaa"/>
+      <rect x="-22" y="120" width="44" height="4" fill="#aaaaaa"/>
+      <rect x="-22" y="137" width="44" height="4" fill="#aaaaaa"/>
+      <rect x="-22" y="154" width="44" height="4" fill="#aaaaaa"/>
+      <rect x="-22" y="171" width="44" height="4" fill="#aaaaaa"/>
+      <rect x="-22" y="188" width="44" height="4" fill="#aaaaaa"/>
+      <!-- Belfry section -->
+      <rect x="-18" y="70" width="36" height="28"/>
+      <!-- Arch windows on belfry -->
+      <rect x="-12" y="73" width="10" height="14" fill="#999" rx="5"/>
+      <rect x="2" y="73" width="10" height="14" fill="#999" rx="5"/>
+      <!-- Renacentist top (cubo) -->
+      <rect x="-14" y="48" width="28" height="25"/>
+      <!-- Spire with Giraldillo figure hint -->
+      <rect x="-5" y="28" width="10" height="22"/>
+      <rect x="-3" y="18" width="6" height="12"/>
+      <rect x="-1" y="10" width="2" height="10"/>
+      <!-- Crosspiece -->
+      <rect x="-8" y="22" width="16" height="2"/>
+    </g>
+
+    <!-- CATEDRAL DE SEVILLA (massive horizontal silhouette) -->
+    <g transform="translate(700,0)">
+      <!-- Main nave body -->
+      <rect x="-90" y="175" width="200" height="65"/>
+      <!-- Central raised section -->
+      <rect x="-50" y="150" width="100" height="30"/>
+      <!-- Side apse -->
+      <rect x="-100" y="185" width="25" height="55"/>
+      <rect x="110" y="185" width="20" height="55"/>
+      <!-- Flying buttress hints -->
+      <rect x="-65" y="168" width="8" height="20"/>
+      <rect x="-45" y="165" width="8" height="23"/>
+      <rect x="38" y="165" width="8" height="23"/>
+      <rect x="58" y="168" width="8" height="20"/>
+      <!-- Dome / crossing tower -->
+      <rect x="-15" y="130" width="30" height="25"/>
+      <ellipse cx="0" cy="130" rx="15" ry="10"/>
+      <!-- Small pinnacles -->
+      <rect x="-80" y="168" width="4" height="12"/>
+      <rect x="-68" y="162" width="4" height="18"/>
+      <rect x="65" y="162" width="4" height="18"/>
+      <rect x="77" y="168" width="4" height="12"/>
+    </g>
+
+    <!-- TORRE DEL ORO (octagonal tower on riverbank) -->
+    <g transform="translate(490,0)">
+      <!-- Stone base -->
+      <rect x="-20" y="208" width="40" height="32"/>
+      <!-- Lower octagonal body -->
+      <rect x="-18" y="175" width="36" height="35"/>
+      <!-- Mid section slightly narrower -->
+      <rect x="-14" y="148" width="28" height="30"/>
+      <!-- Upper section -->
+      <rect x="-11" y="128" width="22" height="22"/>
+      <!-- Small lantern/cupola -->
+      <ellipse cx="0" cy="128" rx="11" ry="8"/>
+      <rect x="-6" y="110" width="12" height="20"/>
+      <!-- Dome -->
+      <ellipse cx="0" cy="110" rx="7" ry="6"/>
+      <rect x="-2" y="100" width="4" height="12"/>
+      <rect x="-6" y="104" width="12" height="3"/>
+    </g>
+
+    <!-- METROPOL PARASOL ("Las Setas") — modern wavy structure -->
+    <g transform="translate(1100,0)">
+      <!-- Support columns -->
+      <rect x="-60" y="200" width="8" height="40"/>
+      <rect x="-25" y="200" width="8" height="40"/>
+      <rect x="17" y="200" width="8" height="40"/>
+      <rect x="52" y="200" width="8" height="40"/>
+      <!-- Wavy mushroom cap 1 -->
+      <ellipse cx="-45" cy="195" rx="28" ry="14"/>
+      <ellipse cx="-45" cy="190" rx="22" ry="10"/>
+      <!-- Wavy mushroom cap 2 -->
+      <ellipse cx="5" cy="192" rx="30" ry="15"/>
+      <ellipse cx="5" cy="187" rx="24" ry="11"/>
+      <!-- Wavy mushroom cap 3 -->
+      <ellipse cx="58" cy="196" rx="25" ry="13"/>
+      <ellipse cx="58" cy="191" rx="20" ry="9"/>
+      <!-- Top platform suggestion -->
+      <rect x="-75" y="175" width="150" height="6" rx="3"/>
+    </g>
+
+    <!-- PUENTE DEL ALAMILLO (cable-stayed bridge) -->
+    <g transform="translate(290,0)">
+      <!-- Bridge deck -->
+      <rect x="-100" y="225" width="200" height="6"/>
+      <!-- Inclined pylon -->
+      <line x1="20" y1="240" x2="-40" y2="120" stroke="#888888" stroke-width="8"/>
+      <!-- Back counterweight -->
+      <rect x="18" y="115" width="8" height="40"/>
+      <!-- Stay cables (left side) -->
+      <line x1="-40" y1="125" x2="-90" y2="228" stroke="#888888" stroke-width="2"/>
+      <line x1="-40" y1="133" x2="-70" y2="228" stroke="#888888" stroke-width="2"/>
+      <line x1="-40" y1="142" x2="-50" y2="228" stroke="#888888" stroke-width="2"/>
+      <line x1="-40" y1="150" x2="-25" y2="228" stroke="#888888" stroke-width="2"/>
+      <line x1="-40" y1="158" x2="0" y2="228" stroke="#888888" stroke-width="2"/>
+    </g>
+
+    <!-- Generic mid-ground buildings scattered -->
+    <rect x="0" y="185" width="55" height="55"/>
+    <rect x="50" y="170" width="40" height="70"/>
+    <rect x="140" y="178" width="65" height="62"/>
+    <rect x="200" y="165" width="45" height="75"/>
+    <rect x="555" y="172" width="70" height="68"/>
+    <rect x="620" y="183" width="45" height="57"/>
+    <rect x="940" y="168" width="60" height="72"/>
+    <rect x="995" y="178" width="50" height="62"/>
+    <rect x="1200" y="172" width="65" height="68"/>
+    <rect x="1260" y="180" width="45" height="60"/>
+    <rect x="1310" y="165" width="70" height="75"/>
+    <rect x="1385" y="178" width="55" height="62"/>
+
+    <!-- Palm trees (Andalusia touch) -->
+    <!-- Palm 1 -->
+    <rect x="170" y="195" width="5" height="40"/>
+    <ellipse cx="172" cy="193" rx="14" ry="8"/>
+    <ellipse cx="160" cy="196" rx="10" ry="5" transform="rotate(-20,160,196)"/>
+    <ellipse cx="184" cy="196" rx="10" ry="5" transform="rotate(20,184,196)"/>
+    <!-- Palm 2 -->
+    <rect x="448" y="198" width="5" height="36"/>
+    <ellipse cx="450" cy="196" rx="13" ry="7"/>
+    <ellipse cx="438" cy="199" rx="9" ry="5" transform="rotate(-20,438,199)"/>
+    <ellipse cx="462" cy="199" rx="9" ry="5" transform="rotate(20,462,199)"/>
+    <!-- Palm 3 -->
+    <rect x="1050" y="195" width="5" height="38"/>
+    <ellipse cx="1052" cy="193" rx="13" ry="8"/>
+    <ellipse cx="1040" cy="196" rx="9" ry="4" transform="rotate(-20,1040,196)"/>
+    <ellipse cx="1064" cy="196" rx="9" ry="4" transform="rotate(20,1064,196)"/>
+    <!-- Palm 4 -->
+    <rect x="1360" y="193" width="5" height="40"/>
+    <ellipse cx="1362" cy="191" rx="14" ry="8"/>
+    <ellipse cx="1350" cy="194" rx="10" ry="5" transform="rotate(-20,1350,194)"/>
+    <ellipse cx="1374" cy="194" rx="10" ry="5" transform="rotate(20,1374,194)"/>
+  </g>
+
+  <!-- === LAYER 3: Foreground silhouette (dark #2d2d2d) === -->
+  <g fill="#2d2d2d">
+    <rect x="0" y="230" width="120" height="50"/>
+    <rect x="115" y="222" width="80" height="58"/>
+    <rect x="190" y="235" width="65" height="45"/>
+    <rect x="250" y="228" width="90" height="52"/>
+    <rect x="335" y="238" width="70" height="42"/>
+    <rect x="400" y="225" width="85" height="55"/>
+    <rect x="480" y="233" width="60" height="47"/>
+    <rect x="535" y="240" width="75" height="40"/>
+    <rect x="605" y="230" width="80" height="50"/>
+    <rect x="680" y="237" width="65" height="43"/>
+    <rect x="740" y="228" width="90" height="52"/>
+    <rect x="825" y="242" width="70" height="38"/>
+    <rect x="890" y="232" width="80" height="48"/>
+    <rect x="965" y="238" width="65" height="42"/>
+    <rect x="1025" y="225" width="85" height="55"/>
+    <rect x="1105" y="235" width="70" height="45"/>
+    <rect x="1170" y="228" width="80" height="52"/>
+    <rect x="1245" y="240" width="65" height="40"/>
+    <rect x="1305" y="232" width="80" height="48"/>
+    <rect x="1380" y="238" width="65" height="42"/>
+    <!-- Ground strip -->
+    <rect x="0" y="258" width="1440" height="22"/>
+  </g>
+</svg>

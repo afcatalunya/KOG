@@ -873,3 +873,19 @@ p  { color: var(--gris-osc); font-size: 1.05rem; line-height: 1.7; }
   .hero-right { flex-direction: column; }
   .trust-bar-inner { flex-direction: column; gap: 12px; }
 }
+
+/* ============ SKYLINE FOOTER ============ */
+.skyline-footer {
+  background: #ffffff;
+  line-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+}
+.skyline-footer img,
+.skyline-footer picture img {
+  width: 100%;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: top center;
+}
