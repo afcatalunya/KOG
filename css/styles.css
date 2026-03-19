@@ -719,6 +719,113 @@ p  { color: var(--gris-osc); font-size: 1.05rem; line-height: 1.7; }
 .breadcrumb a:hover { color: var(--naranja); }
 .breadcrumb span { margin: 0 6px; }
 
+/* ============================================================
+   DISEÑO ÉLITE 2026 — Bento Grid + Glassmorphism
+   Aplicado solo con CSS, sin tocar el HTML.
+   ============================================================ */
+
+/* --- Glassmorphism en las trust-cards del Hero ---
+   El hero tiene fondo oscuro con gradiente, el blur crea el
+   efecto de cristal esmerilado característico del diseño 2026. */
+.trust-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.28),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.trust-card:hover {
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(232,98,42,0.35);
+  box-shadow:
+    0 12px 40px rgba(0,0,0,0.32),
+    inset 0 1px 0 rgba(255,255,255,0.14),
+    0 0 0 1px rgba(232,98,42,0.15);
+  transform: translateX(4px);
+}
+
+/* --- Bento Grid en la sección de Servicios ---
+   3 columnas fijas en desktop. Las tarjetas destacadas
+   ocupan 2/3 del ancho para romper la monotonía uniforme.
+   Patrón:
+     [Pack · · · · · · ][Cert]
+     [Cédula][Reformas][ITE ]
+     [Licencias][Asesoría · ·]
+*/
+@media (min-width: 769px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    align-items: stretch;
+  }
+
+  /* Tarjeta 1 (Pack — featured): ocupa 2 columnas */
+  .service-card:nth-child(1) {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #ffffff 0%, #fff8f4 100%);
+  }
+  /* Tarjeta 2 (Cert. energético): columna normal */
+  .service-card:nth-child(2) {
+    grid-column: span 1;
+  }
+  /* Tarjetas 3, 4, 5 (Cédula, Reformas, ITE): 1 col cada una */
+  .service-card:nth-child(3),
+  .service-card:nth-child(4),
+  .service-card:nth-child(5) {
+    grid-column: span 1;
+  }
+  /* Tarjeta 6 (Licencias): 1 col */
+  .service-card:nth-child(6) {
+    grid-column: span 1;
+  }
+  /* Tarjeta 7 (Asesoría Compra): ocupa 2 columnas */
+  .service-card:nth-child(7) {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9ff 100%);
+  }
+
+  /* Tarjetas anchas: icono + título en horizontal */
+  .service-card:nth-child(1),
+  .service-card:nth-child(7) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 20px;
+    align-items: start;
+  }
+  .service-card:nth-child(1) .badge-featured {
+    grid-column: 1 / -1;
+    justify-self: start;
+    position: static;
+    margin-bottom: 8px;
+  }
+  .service-card:nth-child(1) .service-icon,
+  .service-card:nth-child(7) .service-icon {
+    font-size: 2.8rem;
+    margin-bottom: 0;
+    align-self: start;
+    padding-top: 4px;
+  }
+  .service-card:nth-child(1) h3,
+  .service-card:nth-child(7) h3 {
+    font-size: 1.3rem;
+  }
+  .service-card:nth-child(1) p,
+  .service-card:nth-child(7) p {
+    grid-column: 2;
+  }
+  .service-card:nth-child(1) .service-price,
+  .service-card:nth-child(7) .service-price {
+    grid-column: 2;
+  }
+  .service-card:nth-child(1) .service-link,
+  .service-card:nth-child(7) .service-link {
+    grid-column: 2;
+  }
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
   .hero-inner        { grid-template-columns: 1fr; gap: 40px; }
