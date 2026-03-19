@@ -141,7 +141,10 @@
       </div>
       <div class="contact-form-wrap">
         <h3 style="margin-bottom:24px;font-size:1.1rem;">Pedir consulta gratuita</h3>
-        <form class="contact-form" novalidate>
+        <form class="contact-form" action="https://formsubmit.co/info@kog-arquitectura.com" method="POST" novalidate>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Nueva consulta desde KOG Arquitectura">
           <div class="form-row"><label>Nombre *</label><input type="text" name="nombre" placeholder="Tu nombre" required></div>
           <div class="form-row"><label>Teléfono *</label><input type="tel" name="telefono" placeholder="612 345 678" required></div>
           <div class="form-row"><label>Tipo de reforma</label>

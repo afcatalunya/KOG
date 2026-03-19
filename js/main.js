@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* --- Formulario de contacto --- */
+  /* --- Formulario de contacto (Formsubmit.co AJAX) --- */
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', e => {
@@ -52,15 +52,31 @@ document.addEventListener('DOMContentLoaded', () => {
       const original = btn.textContent;
       btn.textContent = 'Enviando…';
       btn.disabled = true;
-      // Simulación — reemplazar por fetch real a Formspree / Netlify Forms
-      setTimeout(() => {
+
+      const data = Object.fromEntries(new FormData(form));
+      data._subject  = 'Nueva consulta desde KOG Arquitectura · ' + (data.servicio || data.superficie || '');
+      data._captcha  = 'false';
+      data._template = 'table';
+
+      fetch('https://formsubmit.co/ajax/info@kog-arquitectura.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(res => res.json())
+      .then(() => {
         form.innerHTML = `
           <div style="text-align:center;padding:32px 16px;">
             <div style="font-size:3rem;margin-bottom:16px;">✅</div>
             <h3 style="margin-bottom:10px;">¡Mensaje recibido!</h3>
             <p style="color:#6B6B6B;">Nos pondremos en contacto contigo en menos de 24 horas.</p>
           </div>`;
-      }, 900);
+      })
+      .catch(() => {
+        btn.textContent = original;
+        btn.disabled = false;
+        alert('Ha habido un error al enviar. Por favor, llámanos al 639 081 416 o escríbenos por WhatsApp.');
+      });
     });
   }
 

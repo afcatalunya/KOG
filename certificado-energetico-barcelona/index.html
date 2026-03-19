@@ -263,7 +263,10 @@
       </div>
       <div class="contact-form-wrap">
         <h3 style="margin-bottom:24px; font-size:1.1rem;">Pedir precio sin compromiso</h3>
-        <form class="contact-form" novalidate>
+        <form class="contact-form" action="https://formsubmit.co/info@kog-arquitectura.com" method="POST" novalidate>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Nueva consulta desde KOG Arquitectura">
           <div class="form-row">
             <label for="nombre">Nombre *</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>

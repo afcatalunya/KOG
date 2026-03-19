@@ -328,10 +328,7 @@
   <div class="container">
     <div class="about-mini">
       <div class="about-photo-wrap" data-reveal>
-        <div class="about-photo-placeholder">
-          <span class="icon">👤</span>
-          <span>Foto del arquitecto<br><small style="font-weight:400;color:#999;">(añadir imagen)</small></span>
-        </div>
+        <img src="img/JC.jpg" alt="Arquitecto KOG Arquitectura · Barcelona" style="width:100%;max-width:420px;border-radius:16px;display:block;object-fit:cover;aspect-ratio:3/4;">
         <div class="about-badge">
           <strong>+10</strong>
           <span>años de experiencia</span>
@@ -400,7 +397,10 @@
 
       <div class="contact-form-wrap">
         <h3 style="margin-bottom:24px; font-size:1.1rem;">O escríbenos directamente</h3>
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <form class="contact-form" action="https://formsubmit.co/info@kog-arquitectura.com" method="POST" novalidate>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Nueva consulta desde KOG Arquitectura">
           <div class="form-row">
             <label for="nombre">Nombre *</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
