@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog · Guías y consejos para propietarios en Barcelona · KOG Arquitectura</title>
+  <meta name="description" content="Guías prácticas para propietarios en Barcelona: qué documentos necesitas para vender o alquilar, cuándo caduca la cédula de habitabilidad, si necesitas licencia para reformar y más.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.kog-arquitectura.com/blog/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+    .blog-card {
+      background: var(--blanco);
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: var(--trans);
+    }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: var(--sombra); border-color: rgba(232,98,42,0.2); }
+    .blog-card-img {
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #f0ede8, #e5e2db);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--borde);
+    }
+    .blog-card-body { padding: 24px; }
+    .blog-cat {
+      display: inline-block;
+      background: rgba(232,98,42,0.1);
+      color: var(--naranja);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 12px;
+    }
+    .blog-card h3 { font-size: 1.05rem; margin-bottom: 10px; line-height: 1.35; }
+    .blog-card h3 a { color: var(--negro); }
+    .blog-card h3 a:hover { color: var(--naranja); }
+    .blog-card p { font-size: 0.88rem; margin-bottom: 16px; }
+    .blog-meta { font-size: 0.8rem; color: var(--gris-med); display: flex; align-items: center; gap: 12px; }
+    .blog-read { font-weight: 700; color: var(--naranja); font-size: 0.88rem; margin-left: auto; }
+    .blog-read:hover { color: var(--naranja-osc); }
+    .blog-coming {
+      background: var(--gris-cla);
+      border: 2px dashed var(--borde);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+      color: var(--gris-med);
+    }
+    .blog-coming h3 { color: var(--negro); margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/34639081416" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-mark">KOG</span><span class="logo-text">arquitectura<br><small>Barcelona · Sabadell</small></span></a>
+      <nav class="main-nav">
+        <a href="/certificado-energetico-barcelona/">Certificado Energético</a>
+        <a href="/cedula-habitabilidad-barcelona/">Cédula Habitabilidad</a>
+        <a href="/proyecto-reforma-barcelona/">Reformas</a>
+        <a href="/inspeccion-tecnica-edificios-barcelona/">ITE</a>
+        <a href="/sobre-mi/">Sobre mí</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+34639081416" class="header-tel">📞 <span class="tel-num">639 081 416</span></a>
+        <a href="/#contacto" class="btn btn-primary">Pedir presupuesto</a>
+      </div>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb"><div class="container"><a href="/">Inicio</a> <span>›</span> Blog</div></div>
+
+<!-- Hero blog -->
+<section style="background:var(--negro); padding:56px 0;">
+  <div class="container text-center" style="max-width:640px; margin:0 auto;">
+    <span class="label-chip">Guías para propietarios</span>
+    <h1 style="color:white; margin-top:8px; font-size:clamp(1.8rem, 4vw, 2.5rem);">Respuestas claras a las dudas que tienen los propietarios en Barcelona</h1>
+    <p style="color:rgba(255,255,255,0.7); margin-top:14px;">Sin tecnicismos. Sin letra pequeña. Todo lo que necesitas saber sobre trámites, licencias y reformas.</p>
+  </div>
+</section>
+
+<!-- Artículos -->
+<section class="section">
+  <div class="container">
+    <div class="blog-grid">
+
+      <!-- Artículo 1 — placeholder con estructura lista -->
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-img">📋</div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Vender o alquilar</span>
+          <h3><a href="#">¿Qué documentos necesito para vender mi piso en Barcelona?</a></h3>
+          <p>Guía completa: certificado energético, cédula de habitabilidad, nota simple y todo lo que el notario va a pedirte antes de firmar.</p>
+          <div class="blog-meta">
+            <span>⏱ 5 min lectura</span>
+            <span>Certificados</span>
+            <a href="#" class="blog-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-img">🏠</div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Cédula de habitabilidad</span>
+          <h3><a href="#">¿Cada cuánto caduca la cédula de habitabilidad en Cataluña?</a></h3>
+          <p>Plazos de caducidad según el tipo de cédula, cómo consultar la tuya y qué pasa si ha vencido cuando quieres vender.</p>
+          <div class="blog-meta">
+            <span>⏱ 4 min lectura</span>
+            <span>Cédula</span>
+            <a href="#" class="blog-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-img">🔨</div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Reformas</span>
+          <h3><a href="#">¿Necesito licencia para reformar mi cocina en Barcelona?</a></h3>
+          <p>Cuándo hace falta licencia y cuándo no, qué es un comunicado previo y cómo evitar sanciones del Ayuntamiento.</p>
+          <div class="blog-meta">
+            <span>⏱ 6 min lectura</span>
+            <span>Licencias</span>
+            <a href="#" class="blog-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-img">⚡</div>
+        <div class="blog-card-body">
+          <span class="blog-cat">Certificado energético</span>
+          <h3><a href="#">Certificado energético en Barcelona: todo lo que necesitas saber</a></h3>
+          <p>Quién lo necesita, cuánto cuesta, cuánto tarda, qué calificación es normal en un piso antiguo y cómo no dejarte engañar por precios trampa.</p>
+          <div class="blog-meta">
+            <span>⏱ 7 min lectura</span>
+            <span>Certificados</span>
+            <a href="#" class="blog-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-img">🏢</div>
+        <div class="blog-card-body">
+          <span class="blog-cat">ITE</span>
+          <h3><a href="#">¿Qué hago si mi edificio tiene que pasar la ITE?</a></h3>
+          <p>Pasos a seguir cuando el Ayuntamiento notifica la ITE, qué plazos hay, qué pasa si el informe es desfavorable y cómo organizarse como comunidad.</p>
+          <div class="blog-meta">
+            <span>⏱ 5 min lectura</span>
+            <span>ITE</span>
+            <a href="#" class="blog-read">Leer →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card "Próximamente" para anunciar contenido futuro -->
+      <div class="blog-coming" data-reveal>
+        <div style="font-size:2rem; margin-bottom:12px;">✍️</div>
+        <h3>Más artículos en camino</h3>
+        <p style="font-size:0.9rem; margin-top:8px;">Publicamos guías prácticas regularmente. Si tienes una duda concreta, escríbenos y puede convertirse en el próximo artículo.</p>
+        <a href="https://wa.me/34639081416?text=Hola%2C%20tengo%20una%20duda%20sobre..." target="_blank" class="btn btn-outline" style="margin-top:16px;">💬 Pregúntanos por WhatsApp</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-final">
+  <div class="container text-center" style="max-width:640px; margin:0 auto;">
+    <span class="label-chip" style="background:rgba(255,255,255,0.2);color:rgba(255,255,255,0.9);">¿Tienes una duda?</span>
+    <h2 style="color:white; margin-top:8px;">Pregúntanos directamente</h2>
+    <p style="color:rgba(255,255,255,0.78); margin-top:12px;">Si no encuentras la respuesta en el blog, llámanos o escríbenos. Te respondemos el mismo día.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:28px;">
+      <a href="tel:+34639081416" class="btn btn-ghost">📞 639 081 416</a>
+      <a href="https://wa.me/34639081416" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <a href="/" class="logo"><span class="logo-mark">KOG</span><span class="logo-text" style="color:rgba(255,255,255,0.6);">arquitectura</span></a>
+        <p>Arquitecto colegiado COAC. Certificados energéticos, cédulas, reformas e ITE en Barcelona y provincia.</p>
+        <div class="footer-contact"><a href="tel:+34639081416">📞 639 081 416</a><a href="mailto:info@kog-arquitectura.com">✉️ info@kog-arquitectura.com</a></div>
+      </div>
+      <div class="footer-col"><h4>Servicios</h4><ul><li><a href="/certificado-energetico-barcelona/">Certificado Energético</a></li><li><a href="/cedula-habitabilidad-barcelona/">Cédula de Habitabilidad</a></li><li><a href="/pack-certificado-cedula-barcelona/">Pack Certificado + Cédula</a></li><li><a href="/proyecto-reforma-barcelona/">Reformas</a></li><li><a href="/inspeccion-tecnica-edificios-barcelona/">ITE</a></li><li><a href="/licencias-obras-barcelona/">Licencias</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="/politica-privacidad.html">Protección de Datos</a></li><li><a href="/politica-cookies.html">Política de Cookies</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 KOG Arquitectura</span><a href="/">← Volver al inicio</a></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

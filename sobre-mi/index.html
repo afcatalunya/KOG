@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí · Arquitecto colegiado COAC Barcelona · KOG Arquitectura</title>
+  <meta name="description" content="Arquitecto colegiado por el COAC con más de 10 años de experiencia en Barcelona y provincia. Trabajo de forma independiente: el arquitecto que te llama es el que te visita y firma el documento.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.kog-arquitectura.com/sobre-mi/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .about-full-hero {
+      background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 60%, #3a2010 100%);
+      padding: 72px 0;
+    }
+    .about-full-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .timeline { display: flex; flex-direction: column; gap: 0; margin-top: 24px; }
+    .timeline-item {
+      display: flex;
+      gap: 20px;
+      padding-bottom: 28px;
+      position: relative;
+    }
+    .timeline-item:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      bottom: 0;
+      width: 2px;
+      background: var(--borde);
+    }
+    .timeline-dot {
+      width: 40px;
+      height: 40px;
+      background: var(--naranja);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-content h4 { margin-bottom: 4px; }
+    .timeline-content .year { font-size: 0.82rem; color: var(--naranja); font-weight: 700; margin-bottom: 4px; }
+    .timeline-content p { font-size: 0.9rem; }
+    .value-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+    .value-card {
+      background: var(--blanco);
+      border: 1px solid var(--borde);
+      border-radius: var(--radio);
+      padding: 20px;
+    }
+    .value-card .vc-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .value-card h4 { font-size: 0.95rem; margin-bottom: 6px; }
+    .value-card p { font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/34639081416" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-mark">KOG</span><span class="logo-text">arquitectura<br><small>Barcelona · Sabadell</small></span></a>
+      <nav class="main-nav">
+        <a href="/certificado-energetico-barcelona/">Certificado Energético</a>
+        <a href="/cedula-habitabilidad-barcelona/">Cédula Habitabilidad</a>
+        <a href="/proyecto-reforma-barcelona/">Reformas</a>
+        <a href="/inspeccion-tecnica-edificios-barcelona/">ITE</a>
+        <a href="/sobre-mi/" class="active">Sobre mí</a>
+      </nav>
+      <div class="header-cta">
+        <a href="tel:+34639081416" class="header-tel">📞 <span class="tel-num">639 081 416</span></a>
+        <a href="/#contacto" class="btn btn-primary">Pedir presupuesto</a>
+      </div>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="breadcrumb"><div class="container"><a href="/">Inicio</a> <span>›</span> Sobre mí</div></div>
+
+<!-- HERO SOBRE MÍ -->
+<section class="about-full-hero">
+  <div class="container">
+    <div class="about-full-inner">
+      <div>
+        <div class="about-photo-placeholder" style="max-width:320px;">
+          <span class="icon">👤</span>
+          <span>Foto del arquitecto<br><small style="font-weight:400;color:#bbb;">(añadir imagen JPG aquí)</small></span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;">
+          <div style="background:rgba(232,98,42,0.2);border:1px solid rgba(232,98,42,0.3);border-radius:8px;padding:12px 16px;text-align:center;">
+            <div style="font-size:1.8rem;font-weight:900;color:white;">+10</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.65);font-weight:600;">años de experiencia</div>
+          </div>
+          <div style="background:rgba(232,98,42,0.2);border:1px solid rgba(232,98,42,0.3);border-radius:8px;padding:12px 16px;text-align:center;">
+            <div style="font-size:1.8rem;font-weight:900;color:white;">COAC</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.65);font-weight:600;">Arquitecto colegiado</div>
+          </div>
+          <div style="background:rgba(232,98,42,0.2);border:1px solid rgba(232,98,42,0.3);border-radius:8px;padding:12px 16px;text-align:center;">
+            <div style="font-size:1.8rem;font-weight:900;color:white;">BCN</div>
+            <div style="font-size:0.78rem;color:rgba(255,255,255,0.65);font-weight:600;">y provincia</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-badge">Arquitecto colegiado COAC · Barcelona</div>
+        <h1 style="color:white; margin-bottom:20px;">Un arquitecto.<br>No una plataforma.</h1>
+        <p class="lead" style="color:rgba(255,255,255,0.78);">Soy arquitecto colegiado por el COAC con más de 10 años de experiencia en Barcelona y provincia. Trabajo de forma independiente: el arquitecto que te llama es el que te visita, firma el documento y responde si tienes cualquier duda.</p>
+        <p style="color:rgba(255,255,255,0.65); margin-top:16px; font-size:0.95rem;">Me especializo en los trámites que los propietarios necesitan cuando van a vender, alquilar o reformar: certificados energéticos, cédulas de habitabilidad, proyectos de reforma e inspecciones técnicas de edificios.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:28px;">
+          <a href="/#contacto" class="btn btn-primary">Contactar →</a>
+          <a href="tel:+34639081416" class="btn btn-ghost">📞 639 081 416</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MI FILOSOFÍA -->
+<section class="section">
+  <div class="container">
+    <div class="diff-grid">
+      <div data-reveal>
+        <span class="label-chip">Mi forma de trabajar</span>
+        <h2>Si me llamas, hablo yo. Si te visito, voy yo.</h2>
+        <p style="margin-top:14px;">Hay algo que diferencia trabajar con un profesional independiente de contratar a una plataforma online: la responsabilidad directa. Cuando trabajas conmigo, sabes exactamente con quién estás tratando y a quién puedes llamar si surge cualquier problema.</p>
+        <p style="margin-top:12px;">No tengo un departamento de atención al cliente. Tampoco lo necesito. Soy yo quien gestiona cada encargo personalmente y quien responde al teléfono cuando llamas.</p>
+        <blockquote style="border-left:4px solid var(--naranja); padding-left:20px; margin-top:24px; font-style:italic; color:var(--gris-osc);">
+          "Antes de firmar un certificado o un proyecto, visito el inmueble, lo estudio y lo entiendo. No somos una máquina de procesar encargos, somos arquitectos que trabajan para personas."
+        </blockquote>
+      </div>
+
+      <div data-reveal>
+        <div class="value-cards">
+          <div class="value-card">
+            <div class="vc-icon">🎯</div>
+            <h4>Responsabilidad directa</h4>
+            <p>Nombre y número de colegiado en cada documento que firmo. Sin intermediarios anónimos.</p>
+          </div>
+          <div class="value-card">
+            <div class="vc-icon">🔍</div>
+            <h4>Diagnóstico honesto</h4>
+            <p>Te digo lo que necesitas, no lo que me conviene venderte. A veces eso significa decirte que no necesitas arquitecto.</p>
+          </div>
+          <div class="value-card">
+            <div class="vc-icon">💶</div>
+            <h4>Precio claro desde el principio</h4>
+            <p>Presupuesto cerrado antes de empezar. Sin sorpresas al finalizar el trabajo.</p>
+          </div>
+          <div class="value-card">
+            <div class="vc-icon">📞</div>
+            <h4>Acceso directo</h4>
+            <p>Teléfono y WhatsApp directos al arquitecto. Sin formularios, sin tickets de soporte.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMACIÓN Y TRAYECTORIA -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="max-width:760px; margin:0 auto;">
+      <div class="section-header" style="margin-bottom:40px;">
+        <span class="label-chip">Formación y experiencia</span>
+        <h2>Trayectoria profesional</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot">🎓</div>
+          <div class="timeline-content">
+            <div class="year">Formación</div>
+            <h4>Arquitecto por la ETSAB</h4>
+            <p>Estudios de arquitectura en la Escola Tècnica Superior d'Arquitectura de Barcelona. Colegiado en el COAC (Col·legi d'Arquitectes de Catalunya).</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot">🏗️</div>
+          <div class="timeline-content">
+            <div class="year">Primeros años</div>
+            <h4>Experiencia en obra nueva y rehabilitación</h4>
+            <p>Primeros años de trayectoria en proyectos de obra nueva y rehabilitación de edificios, adquiriendo experiencia técnica en diferentes escalas y tipologías.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot">📋</div>
+          <div class="timeline-content">
+            <div class="year">Especialización</div>
+            <h4>Certificaciones energéticas e ITE</h4>
+            <p>Habilitación para la realización de certificados de eficiencia energética en Cataluña e inspecciones técnicas de edificios. Registro activo en el ICAEN.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-dot">🚀</div>
+          <div class="timeline-content">
+            <div class="year">Actualidad</div>
+            <h4>KOG Arquitectura · Ejercicio independiente</h4>
+            <p>Estudio independiente con base en Sabadell y actuación en toda Barcelona y provincia. Especializado en los servicios que los propietarios necesitan: certificados, cédulas, reformas e ITE.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONA -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-chip">Dónde trabajo</span>
+      <h2>Con base en Sabadell, a toda Barcelona y provincia</h2>
+      <p>Realizo encargos en todo el área metropolitana de Barcelona y la provincia. Si tienes dudas sobre si llego a tu municipio, llámame o escríbeme por WhatsApp.</p>
+    </div>
+    <div class="zona-grid">
+      <span class="zona-tag">📍 Barcelona ciudad</span>
+      <span class="zona-tag">📍 Sabadell</span>
+      <span class="zona-tag">📍 Terrassa</span>
+      <span class="zona-tag">📍 Badalona</span>
+      <span class="zona-tag">📍 L'Hospitalet</span>
+      <span class="zona-tag">📍 Cornellà</span>
+      <span class="zona-tag">📍 Sant Cugat del Vallès</span>
+      <span class="zona-tag">📍 El Prat de Llobregat</span>
+      <span class="zona-tag">📍 Mataró</span>
+      <span class="zona-tag">📍 Granollers</span>
+      <span class="zona-tag">📍 Vilafranca del Penedès</span>
+      <span class="zona-tag">📍 Mollet del Vallès</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-final">
+  <div class="container text-center" style="max-width:680px; margin:0 auto;">
+    <span class="label-chip" style="background:rgba(255,255,255,0.2);color:rgba(255,255,255,0.9);">Hablemos</span>
+    <h2 style="color:white; margin-top:8px;">¿Tienes un proyecto o una duda?</h2>
+    <p style="color:rgba(255,255,255,0.78); margin-top:12px; font-size:1.1rem;">Llámame, escríbeme por WhatsApp o usa el formulario de la página de inicio. Te respondo personalmente el mismo día.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:32px;">
+      <a href="tel:+34639081416" class="btn btn-ghost" style="font-size:1.05rem;">📞 639 081 416</a>
+      <a href="https://wa.me/34639081416" target="_blank" class="btn btn-whatsapp" style="font-size:1.05rem;">💬 WhatsApp</a>
+      <a href="/#contacto" class="btn btn-primary" style="font-size:1.05rem;">Formulario de contacto →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-logo">
+        <a href="/" class="logo"><span class="logo-mark">KOG</span><span class="logo-text" style="color:rgba(255,255,255,0.6);">arquitectura</span></a>
+        <p>Arquitecto colegiado COAC. Especialistas en certificados energéticos, cédulas de habitabilidad, reformas e ITE en Barcelona y provincia.</p>
+        <div class="footer-contact"><a href="tel:+34639081416">📞 639 081 416</a><a href="mailto:info@kog-arquitectura.com">✉️ info@kog-arquitectura.com</a><a href="https://wa.me/34639081416" target="_blank">💬 WhatsApp</a></div>
+      </div>
+      <div class="footer-col"><h4>Servicios</h4><ul><li><a href="/certificado-energetico-barcelona/">Certificado Energético</a></li><li><a href="/cedula-habitabilidad-barcelona/">Cédula de Habitabilidad</a></li><li><a href="/pack-certificado-cedula-barcelona/">Pack Certificado + Cédula</a></li><li><a href="/proyecto-reforma-barcelona/">Reformas</a></li><li><a href="/inspeccion-tecnica-edificios-barcelona/">ITE</a></li><li><a href="/licencias-obras-barcelona/">Licencias</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="/politica-privacidad.html">Protección de Datos</a></li><li><a href="/politica-cookies.html">Política de Cookies</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 KOG Arquitectura · Todos los derechos reservados</span><a href="/">← Volver al inicio</a></div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
