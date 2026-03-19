@@ -25,6 +25,12 @@
     .legal-table td { padding: 10px 14px; border: 1px solid var(--borde); vertical-align: top; color: #444; }
     .legal-updated { display: inline-block; background: rgba(232,98,42,0.1); color: var(--naranja); font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 100px; margin-top: 8px; }
   </style>
+  <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+  <meta property="og:title" content="Política de Privacidad y Cookies · KOG Arquitectura">
+  <meta property="og:description" content="Política de privacidad, protección de datos y uso de cookies de KOG Arquitectura, conforme al RGPD y la LOPDGDD.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kog-arquitectura.com/img/og-kog.jpg">
+  <meta property="og:locale" content="es_ES">
 </head>
 <body>
 
@@ -35,7 +41,7 @@
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="../" class="logo"><span class="logo-mark">KOG</span><span class="logo-text">arquitectura<br><small>Barcelona · Sabadell</small></span></a>
+      <a href="../" class="logo"><img src="../img/logo-KOG2.png" alt="KOG Arquitectura" style="height:44px;width:auto;display:block;" loading="eager"></a>
       <nav class="main-nav">
         <a href="../certificado-energetico-barcelona/">Certificado Energético</a>
         <a href="../cedula-habitabilidad-barcelona/">Cédula Habitabilidad</a>
@@ -147,7 +153,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="../" class="logo"><span class="logo-mark">KOG</span><span class="logo-text">arquitectura<br><small>Barcelona · Sabadell</small></span></a>
+        <a href="../" class="logo"><img src="../img/logo-KOG2.png" alt="KOG Arquitectura" style="height:44px;width:auto;display:block;" loading="eager"></a>
         <p style="margin-top:12px; font-size:0.85rem; opacity:0.6;">Arquitecto colegiado COAC.<br>Barcelona y provincia.</p>
       </div>
       <div class="footer-links">
@@ -181,5 +187,25 @@
 </footer>
 
 <script src="../js/main.js"></script>
+
+<!-- Banner de cookies -->
+<div id="kog-cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;padding:16px 24px;z-index:9999;display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
+  <p style="margin:0;font-size:0.88rem;flex:1;min-width:260px;">🍪 Usamos cookies técnicas para el funcionamiento del sitio. No usamos cookies de rastreo ni publicidad. <a href="../politica-privacidad/" style="color:#e8622a;font-weight:700;">Más información</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0;">
+    <button onclick="kogAccept()" style="background:#e8622a;color:#fff;border:none;padding:9px 20px;border-radius:6px;font-weight:700;cursor:pointer;font-size:0.88rem;">Aceptar</button>
+    <button onclick="kogAccept()" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.3);padding:9px 20px;border-radius:6px;font-weight:600;cursor:pointer;font-size:0.88rem;">Solo técnicas</button>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('kog-cookie-banner');
+  if(b && !localStorage.getItem('kog_cc')){ b.style.display='flex'; }
+})();
+function kogAccept(){
+  localStorage.setItem('kog_cc','1');
+  var b=document.getElementById('kog-cookie-banner');
+  if(b) b.style.display='none';
+}
+</script>
 </body>
 </html>

@@ -25,6 +25,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+  <meta property="og:title" content="Certificado Energético Barcelona · Desde 95 € todo incluido · KOG Arquitectura">
+  <meta property="og:description" content="Certificado energético en Barcelona desde 95 € todo incluido. Visita, informe y registro ICAEN. Arquitecto colegiado. Entrega en 24–48 horas. Sin intermediarios">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.kog-arquitectura.com/img/og-kog.jpg">
+  <meta property="og:locale" content="es_ES">
 </head>
 <body>
 
@@ -36,15 +42,13 @@
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="../" class="logo">
-        <span class="logo-mark">KOG</span>
-        <span class="logo-text">arquitectura<br><small>Barcelona · Sabadell</small></span>
-      </a>
-      <nav class="main-nav">
-        <a href="../certificado-energetico-barcelona/" class="active">Certificado Energético</a>
+      <a href="../" class="logo"><img src="../img/logo-KOG2.png" alt="KOG Arquitectura" style="height:44px;width:auto;display:block;" loading="eager"></a>
+            <nav class="main-nav">
+        <a href="../certificado-energetico-barcelona/">Certificado Energético</a>
         <a href="../cedula-habitabilidad-barcelona/">Cédula Habitabilidad</a>
         <a href="../proyecto-reforma-barcelona/">Reformas</a>
         <a href="../inspeccion-tecnica-edificios-barcelona/">ITE</a>
+        <a href="../asesoria-compra-vivienda-barcelona/">Asesoría Compra</a>
         <a href="../sobre-mi/">Sobre mí</a>
         <a href="../blog/">Blog</a>
       </nav>
@@ -266,6 +270,7 @@
         <h3 style="margin-bottom:24px; font-size:1.1rem;">Pedir precio sin compromiso</h3>
         <form class="contact-form" action="https://formsubmit.co/info@kog-arquitectura.com" method="POST" novalidate>
         <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.kog-arquitectura.com/gracias/">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="Nueva consulta desde KOG Arquitectura">
           <div class="form-row">
@@ -303,10 +308,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-logo">
-        <a href="../" class="logo">
-          <span class="logo-mark">KOG</span>
-          <span class="logo-text" style="color:rgba(255,255,255,0.6);">arquitectura</span>
-        </a>
+        <a href="../" class="logo"><img src="../img/logo-KOG2.png" alt="KOG Arquitectura" style="height:44px;width:auto;display:block;" loading="eager"></a>
         <p>Arquitecto colegiado COAC. Certificados energéticos en Barcelona y provincia desde 95 € todo incluido.</p>
         <div class="footer-contact">
           <a href="tel:+34639081416">📞 639 081 416</a>
@@ -339,5 +341,25 @@
 </footer>
 
 <script src="../js/main.js"></script>
+
+<!-- Banner de cookies -->
+<div id="kog-cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;padding:16px 24px;z-index:9999;display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
+  <p style="margin:0;font-size:0.88rem;flex:1;min-width:260px;">🍪 Usamos cookies técnicas para el funcionamiento del sitio. No usamos cookies de rastreo ni publicidad. <a href="../politica-privacidad/" style="color:#e8622a;font-weight:700;">Más información</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0;">
+    <button onclick="kogAccept()" style="background:#e8622a;color:#fff;border:none;padding:9px 20px;border-radius:6px;font-weight:700;cursor:pointer;font-size:0.88rem;">Aceptar</button>
+    <button onclick="kogAccept()" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.3);padding:9px 20px;border-radius:6px;font-weight:600;cursor:pointer;font-size:0.88rem;">Solo técnicas</button>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('kog-cookie-banner');
+  if(b && !localStorage.getItem('kog_cc')){ b.style.display='flex'; }
+})();
+function kogAccept(){
+  localStorage.setItem('kog_cc','1');
+  var b=document.getElementById('kog-cookie-banner');
+  if(b) b.style.display='none';
+}
+</script>
 </body>
 </html>

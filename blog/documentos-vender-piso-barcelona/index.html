@@ -80,6 +80,7 @@
     .art-nav a { font-size:0.9rem; color:var(--naranja); font-weight:600; }
     @media(max-width:600px){ .art-hero{ height:280px; } .art-hero-inner{ padding:24px; } }
   </style>
+  <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
 </head>
 <body>
 
@@ -90,14 +91,15 @@
 <header class="site-header">
   <div class="container">
     <div class="header-inner">
-      <a href="../../" class="logo"><span class="logo-mark">KOG</span><span class="logo-text">arquitectura<br><small>Barcelona · Sabadell</small></span></a>
-      <nav class="main-nav">
+      <a href="../../" class="logo"><img src="../../img/logo-KOG2.png" alt="KOG Arquitectura" style="height:44px;width:auto;display:block;" loading="eager"></a>
+            <nav class="main-nav">
         <a href="../../certificado-energetico-barcelona/">Certificado Energético</a>
         <a href="../../cedula-habitabilidad-barcelona/">Cédula Habitabilidad</a>
         <a href="../../proyecto-reforma-barcelona/">Reformas</a>
         <a href="../../inspeccion-tecnica-edificios-barcelona/">ITE</a>
+        <a href="../../asesoria-compra-vivienda-barcelona/">Asesoría Compra</a>
         <a href="../../sobre-mi/">Sobre mí</a>
-        <a href="../../blog/">Blog</a>
+        <a href="../../blog/" style="color:var(--naranja)">Blog</a>
       </nav>
       <div class="header-cta">
         <a href="tel:+34639081416" class="header-tel">📞 <span class="tel-num">639 081 416</span></a>
@@ -189,7 +191,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-logo">
-        <a href="../../" class="logo"><span class="logo-mark">KOG</span><span class="logo-text" style="color:rgba(255,255,255,0.6);">arquitectura</span></a>
+        <a href="../../" class="logo"><img src="../../img/logo-KOG2.png" alt="KOG Arquitectura" style="height:44px;width:auto;display:block;" loading="eager"></a>
         <p>Arquitecto colegiado COAC. Certificados energéticos, cédulas, reformas e ITE en Barcelona y provincia.</p>
         <div class="footer-contact"><a href="tel:+34639081416">📞 639 081 416</a><a href="mailto:info@kog-arquitectura.com">✉️ info@kog-arquitectura.com</a></div>
       </div>
@@ -200,5 +202,25 @@
   </div>
 </footer>
 <script src="../../js/main.js"></script>
+
+<!-- Banner de cookies -->
+<div id="kog-cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#fff;padding:16px 24px;z-index:9999;display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
+  <p style="margin:0;font-size:0.88rem;flex:1;min-width:260px;">🍪 Usamos cookies técnicas para el funcionamiento del sitio. No usamos cookies de rastreo ni publicidad. <a href="../../politica-privacidad/" style="color:#e8622a;font-weight:700;">Más información</a></p>
+  <div style="display:flex;gap:10px;flex-shrink:0;">
+    <button onclick="kogAccept()" style="background:#e8622a;color:#fff;border:none;padding:9px 20px;border-radius:6px;font-weight:700;cursor:pointer;font-size:0.88rem;">Aceptar</button>
+    <button onclick="kogAccept()" style="background:transparent;color:rgba(255,255,255,0.6);border:1px solid rgba(255,255,255,0.3);padding:9px 20px;border-radius:6px;font-weight:600;cursor:pointer;font-size:0.88rem;">Solo técnicas</button>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('kog-cookie-banner');
+  if(b && !localStorage.getItem('kog_cc')){ b.style.display='flex'; }
+})();
+function kogAccept(){
+  localStorage.setItem('kog_cc','1');
+  var b=document.getElementById('kog-cookie-banner');
+  if(b) b.style.display='none';
+}
+</script>
 </body>
 </html>
